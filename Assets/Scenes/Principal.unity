@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1527607438102374006, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1527607438102374006, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -353,18 +353,6 @@ PrefabInstance:
     - target: {fileID: 2195775794455149772, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
       propertyPath: m_Name
       value: Naranja
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272473644286866392, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6449073122223828301, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6449073122223828301, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bdc1e3c39bdf4b439e66be0797013ca, type: 3}
