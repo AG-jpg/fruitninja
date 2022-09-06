@@ -18,15 +18,20 @@ public class Fruta : MonoBehaviour
             r.AddExplosionForce(Random.Range(500,1000), transform.position, 5f);
         }
 
+        Destroy(inst.gameObject, 5);
         Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        Espada e = collision.GetComponent<Espada>();
+
+        if(!e)
         {
-            CrearFrutaCortada();
+            return;
         }
+        else
+
+        CrearFrutaCortada();
     }
 }
