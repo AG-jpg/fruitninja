@@ -18,6 +18,7 @@ public class Fruta : MonoBehaviour
             r.AddExplosionForce(Random.Range(500,1000), transform.position, 5f);
         }
 
+        FindObjectOfType<GameManager>().AumentarPuntaje();
         Destroy(inst.gameObject, 5);
         Destroy(gameObject);
     }
