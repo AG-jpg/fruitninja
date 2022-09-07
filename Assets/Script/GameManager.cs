@@ -13,4 +13,9 @@ public class GameManager : MonoBehaviour
     puntaje += 2;
     textoPuntaje.text = puntaje.ToString();
    }
+
+   public void TocarBomba()
+   {
+      print("Bomba Tocada");
+   }
 }
