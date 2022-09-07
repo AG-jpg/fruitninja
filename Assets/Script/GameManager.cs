@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
 
    public void TocarBomba()
    {
-      print("Bomba Tocada");
+      Time.timeScale = 0;
    }
 }

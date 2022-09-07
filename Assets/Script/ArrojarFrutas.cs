@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ArrojarFrutas : MonoBehaviour
 {
-    public GameObject frutaArrojada;
+    public GameObject[] frutasParaArrojar;
+    public GameObject bomba;
     public float esperaMinima = 0.3f;
     public float esperaMaxima = 1f;
     public float fuerzaMinima = 12;
@@ -25,7 +26,19 @@ public class ArrojarFrutas : MonoBehaviour
 
             Transform t = lugaresLanzamiento[Random.Range(0,lugaresLanzamiento.Length)];
 
-            GameObject fruta = Instantiate(frutaArrojada, t.position, t.rotation);
+            GameObject go = null;
+
+            float p = Random.Range(0,100);
+
+            if(p<10)
+            {
+                go = bomba;
+            }else
+            {
+                go = frutasParaArrojar[Random.Range(0, frutasParaArrojar.Length)];
+            }
+
+            GameObject fruta = Instantiate(go, t.position, t.rotation);
 
             fruta.GetComponent<Rigidbody2D>().AddForce(t.transform.up * Random.Range(fuerzaMinima, fuerzaMaxima), ForceMode2D.Impulse);
 
