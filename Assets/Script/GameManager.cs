@@ -30,14 +30,14 @@ public class GameManager : MonoBehaviour
     if(puntaje > mejorPuntaje)
     {
       PlayerPrefs.SetInt("MejorPuntaje", puntaje);
-      textoMejorPuntaje.text = puntaje.ToString();
+      textoMejorPuntaje.text = "Best: " + puntaje.ToString();
     }
    }
 
    public void TocarBomba()
    {
       panelGameOver.SetActive(true);
-      textoPuntaje.text = "Score: " + puntaje.ToString();
+      puntajeFinal.text = "Score: " + puntaje.ToString();
       Time.timeScale = 0;
    }
 
@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
       textoPuntaje.text = "0";
       Time.timeScale = 1;
       panelGameOver.SetActive(false);
-      puntajeFinal.text = "0";
 
       foreach(GameObject g in GameObject.FindGameObjectsWithTag("Interactivo"))
       {
