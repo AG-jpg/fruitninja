@@ -311,9 +311,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntaje: 0
+  mejorPuntaje: 0
   textoPuntaje: {fileID: 1133732913}
-  puntajeFinal: {fileID: 882008662}
+  textoMejorPuntaje: {fileID: 285445454}
   panelGameOver: {fileID: 1848292753}
+  puntajeFinal: {fileID: 882008662}
 --- !u!4 &463872222
 Transform:
   m_ObjectHideFlags: 0
@@ -850,7 +852,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133732911}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -859,7 +861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -30}
+  m_AnchoredPosition: {x: 100, y: -50}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133732913
@@ -889,7 +891,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 120
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1

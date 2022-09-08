@@ -7,20 +7,31 @@ public class GameManager : MonoBehaviour
 {
    [Header("Elementos del Puntaje")]
    public int puntaje;
+   public int mejorPuntaje;
    public Text textoPuntaje;
-   public Text puntajeFinal;
+   public Text textoMejorPuntaje;
 
    [Header("Elementos Game Over")]
    public GameObject panelGameOver;
+   public Text puntajeFinal;
+   
 
    public void Awake() {
       panelGameOver.SetActive(false);
+      mejorPuntaje = PlayerPrefs.GetInt("MejorPuntaje");
+      textoMejorPuntaje.text = "Best Score: " + mejorPuntaje;
    }
 
    public void AumentarPuntaje()
    {
     puntaje += 2;
     textoPuntaje.text = puntaje.ToString();
+
+    if(puntaje > mejorPuntaje)
+    {
+      PlayerPrefs.SetInt("MejorPuntaje", puntaje);
+      textoMejorPuntaje.text = puntaje.ToString();
+    }
    }
 
    public void TocarBomba()
