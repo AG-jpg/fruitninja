@@ -14,10 +14,16 @@ public class GameManager : MonoBehaviour
    [Header("Elementos Game Over")]
    public GameObject panelGameOver;
    public Text puntajeFinal;
+   public Text textoMejorPuntajePanel;
    
 
    public void Awake() {
       panelGameOver.SetActive(false);
+      PonerMejorPuntaje();
+   }
+
+   private void PonerMejorPuntaje()
+   {
       mejorPuntaje = PlayerPrefs.GetInt("MejorPuntaje");
       textoMejorPuntaje.text = "Best Score: " + mejorPuntaje;
    }
@@ -31,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
       PlayerPrefs.SetInt("MejorPuntaje", puntaje);
       textoMejorPuntaje.text = "Best: " + puntaje.ToString();
+      mejorPuntaje = puntaje;
     }
    }
 
@@ -38,13 +45,14 @@ public class GameManager : MonoBehaviour
    {
       panelGameOver.SetActive(true);
       puntajeFinal.text = "Score: " + puntaje.ToString();
+      textoMejorPuntajePanel.text = "Best Score " + mejorPuntaje.ToString();
       Time.timeScale = 0;
    }
 
    public void Reiniciar()
    {
       puntaje = 0;
-      textoPuntaje.text = "0";
+      textoPuntaje.text = puntaje.ToString();
       Time.timeScale = 1;
       panelGameOver.SetActive(false);
 

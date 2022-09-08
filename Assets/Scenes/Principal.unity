@@ -316,6 +316,7 @@ MonoBehaviour:
   textoMejorPuntaje: {fileID: 285445454}
   panelGameOver: {fileID: 1848292753}
   puntajeFinal: {fileID: 882008662}
+  textoMejorPuntajePanel: {fileID: 624197284}
 --- !u!4 &463872222
 Transform:
   m_ObjectHideFlags: 0
@@ -473,7 +474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -140}
+  m_AnchoredPosition: {x: 0, y: -135}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &624197284
