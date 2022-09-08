@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Naranja Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bebddf11f515b40c5916070de20a8f3f, type: 3}
+      propertyPath: m_TagString
+      value: Interactivo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bebddf11f515b40c5916070de20a8f3f, type: 3}
 --- !u!1 &2195775794455149772 stripped

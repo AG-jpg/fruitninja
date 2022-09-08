@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f89116bd016324db99d76c51cd703a23, type: 3}
       propertyPath: m_Name
-      value: Naranja_Cortada
+      value: Naranja_Cortada Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f89116bd016324db99d76c51cd703a23, type: 3}
+      propertyPath: m_TagString
+      value: Interactivo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f89116bd016324db99d76c51cd703a23, type: 3}
